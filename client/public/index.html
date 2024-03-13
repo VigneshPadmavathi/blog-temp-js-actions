@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body class="bg-white dark:bg-slate-800 transition-all">
+    <header class="px-4 py-6 md:px-8 sticky top-0">
+      <a href="#">
+        <img class="logo" src="./assets/img/logo.png" alt="" />
+      </a>
+
+      <div id="toggleMenu" class="cursor-pointer transition-all">
+        <i
+          class="bx bxs-moon text-2xl text-slate-800 dark:text-slate-400"
+          id="toggleMenuIcon"
+        ></i>
+      </div>
+    </header>
+    <main>
+      <div
+        class="col-span-1 md:col-span-8 flex flex-col text-slate-800 dark:text-slate-400 bg-slate-200 dark:bg-slate-700 items-start justify-start md:max-h-[calc(100vh-112px)] md:overflow-y-scroll px-4 py-4 md:px-12 gap-6"
+        id="selectedBlogContainer"
+      >
+        <!-- title -->
+
+        <!-- cover image -->
+
+        <!-- description -->
+
+        <!-- content -->
+      </div>
+
+      <div
+        class="col-span-1 md:col-span-4 text-slate-800 dark:text-slate-400 bg-slate-200 dark:bg-slate-700 md:h-[calc(100vh-112px)] md:overflow-y-scroll grid grid-cols-2 auto-rows-max grid-flow-row"
+        id="blogListContainer"
+      ></div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

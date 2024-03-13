@@ -1,0 +1,12 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "scripts": {
+    "watch": "yarn tailwindcss -i ./src/input.css -o ./public/assets/css/styles.css --watch"
+  }
+}
