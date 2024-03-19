@@ -61,6 +61,29 @@ const generateMainBlogContainer = (data) => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+  const body = document.body;
+
+  //   check the user preferences
+  const currentmode = localStorage.getItem("mode");
+  console.log("Current Mode : ", currentmode);
+
+  if (currentmode === "dark") {
+    body.classList.add("dark");
+  }
+
+  //   toggle between the dark and light
+  toggleMenu.addEventListener("click", () => {
+    console.log("Current Mode : ", currentmode);
+
+    toggleMenuIcon.classList.toggle("bxs-sun");
+    body.classList.toggle("dark");
+    // Update the user's preference in localStorage
+    localStorage.setItem(
+      "mode",
+      body.classList.contains("dark") ? "dark" : "light"
+    );
+  });
+
   // Fetch blogs and render them on the right side
   fetchBlogs()
     .then((data) => {
